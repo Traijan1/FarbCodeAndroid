@@ -9,83 +9,96 @@
     <Spinner
             android:layout_width="@dimen/spinner_width"
             android:layout_height="wrap_content" android:id="@+id/sp_1"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toStartOf="@+id/sp_2"
-            android:layout_marginTop="300dp" android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
-    />
+            app:layout_constraintTop_toBottomOf="@+id/resistance"
+            android:layout_marginTop="84dp" app:layout_constraintEnd_toStartOf="@+id/sp_2"
+            android:layout_marginEnd="40dp" android:layout_marginRight="40dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="65dp"
+            android:layout_marginStart="65dp"/>
     <Spinner
             android:layout_width="@dimen/spinner_width"
             android:layout_height="wrap_content" android:id="@+id/sp_5"
-            app:layout_constraintTop_toBottomOf="@+id/sp_3" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="24dp"
-            app:layout_constraintHorizontal_bias="0.164"/>
+            app:layout_constraintTop_toBottomOf="@+id/sp_3"
+            android:layout_marginTop="20dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="65dp"
+            android:layout_marginStart="65dp"
+            app:layout_constraintEnd_toStartOf="@+id/sp_4"
+            android:layout_marginRight="40dp" android:layout_marginEnd="40dp"/>
     <Spinner
             android:layout_width="@dimen/spinner_width"
             android:layout_height="wrap_content" android:id="@+id/sp_3"
-            app:layout_constraintTop_toBottomOf="@+id/sp_1" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="40dp" android:layout_marginTop="24dp" android:layout_marginStart="40dp"
-            app:layout_constraintEnd_toStartOf="@+id/sp_4" app:layout_constraintHorizontal_bias="0.157"
-    />
+            app:layout_constraintTop_toBottomOf="@+id/sp_1"
+            android:layout_marginTop="20dp" app:layout_constraintEnd_toStartOf="@+id/sp_4"
+            android:layout_marginEnd="40dp" android:layout_marginRight="40dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="65dp"
+            android:layout_marginStart="65dp"/>
     <Spinner
             android:layout_width="@dimen/spinner_width"
             android:layout_height="wrap_content" android:id="@+id/sp_2"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="300dp" android:layout_marginEnd="52dp" android:layout_marginRight="52dp"
-    />
+            app:layout_constraintTop_toBottomOf="@+id/resistance"
+            android:layout_marginTop="84dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="52dp"
+            android:layout_marginEnd="52dp"/>
     <Spinner
             android:layout_width="@dimen/spinner_width"
             android:layout_height="wrap_content" android:id="@+id/sp_4"
-            app:layout_constraintTop_toBottomOf="@+id/sp_2" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="24dp" android:layout_marginEnd="52dp" android:layout_marginRight="52dp"
-    />
+            app:layout_constraintTop_toBottomOf="@+id/sp_2"
+            android:layout_marginTop="20dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="52dp"
+            android:layout_marginEnd="52dp"/>
     <TextView
             android:layout_width="287dp"
-            android:layout_height="41dp" android:id="@+id/tv_output"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="52dp"
-            android:textColor="@color/Foreground" android:gravity="center"/>
+            android:layout_height="32dp" android:id="@+id/tv_output"
+            android:textColor="@color/Foreground" android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="52dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
     <Button
             android:text="@string/button_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/button"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sp_5" app:layout_constraintVertical_bias="0.718"
             android:onClick="calculate"
-            android:background="@color/Background" android:textColor="@color/Foreground" tools:ignore="OnClick"/>
+            android:background="@color/Background" android:textColor="@color/Foreground" tools:ignore="OnClick"
+            app:layout_constraintTop_toBottomOf="@+id/sp_5"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.609"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
     <TextView
             android:layout_width="191dp"
-            android:layout_height="56dp" android:id="@+id/resistance"
-            app:layout_constraintBottom_toTopOf="@+id/sp_1"
-            app:layout_constraintTop_toBottomOf="@+id/tv_output" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:background="@color/resistorColor"/>
+            android:layout_height="@dimen/resistorHeight" android:id="@+id/resistance"
+            android:background="@color/resistorColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/tv_output"
+            android:layout_marginTop="64dp"/>
     <TextView
-            android:layout_width="15dp"
-            android:layout_height="56dp" android:id="@+id/ringOne"
-            app:layout_constraintEnd_toEndOf="@+id/resistance" app:layout_constraintStart_toStartOf="@+id/resistance"
-            app:layout_constraintHorizontal_bias="0.13" app:layout_constraintTop_toTopOf="@+id/resistance"
+            android:layout_width="@dimen/ringWidth"
+            android:layout_height="@dimen/resistorHeight" android:id="@+id/ringOne"
+            app:layout_constraintBottom_toBottomOf="@+id/resistance"
+            app:layout_constraintTop_toTopOf="@+id/resistance" app:layout_constraintStart_toStartOf="@+id/resistance"
+            android:layout_marginLeft="36dp" android:layout_marginStart="36dp"
+            app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+            android:layout_width="@dimen/ringWidth"
+            android:layout_height="@dimen/resistorHeight" android:id="@+id/ringTwo"
+            app:layout_constraintTop_toTopOf="@+id/resistance"
+            app:layout_constraintBottom_toBottomOf="@+id/resistance" app:layout_constraintStart_toEndOf="@+id/ringOne"
+            app:layout_constraintVertical_bias="0.0" android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"/>
+    <TextView
+            android:layout_width="@dimen/ringWidth"
+            android:layout_height="@dimen/resistorHeight" android:id="@+id/ringThree"
+            app:layout_constraintTop_toTopOf="@+id/resistance"
+            app:layout_constraintBottom_toBottomOf="@+id/resistance" app:layout_constraintStart_toEndOf="@+id/ringTwo"
+            android:layout_marginLeft="11dp" android:layout_marginStart="11dp"
+            app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+            android:layout_width="@dimen/ringWidth"
+            android:layout_height="@dimen/resistorHeight" android:id="@+id/ringFour"
+            app:layout_constraintStart_toEndOf="@+id/ringThree"
+            android:layout_marginLeft="11dp" android:layout_marginStart="11dp"
+            app:layout_constraintTop_toTopOf="@+id/resistance"
             app:layout_constraintBottom_toBottomOf="@+id/resistance"/>
     <TextView
-            android:layout_width="15dp"
-            android:layout_height="56dp" android:id="@+id/ringTwo"
-            app:layout_constraintEnd_toEndOf="@+id/resistance" app:layout_constraintStart_toStartOf="@+id/resistance"
-            app:layout_constraintHorizontal_bias="0.289" app:layout_constraintTop_toTopOf="@+id/resistance"
+            android:layout_width="@dimen/ringWidth"
+            android:layout_height="@dimen/resistorHeight" android:id="@+id/ringFifth"
+            app:layout_constraintStart_toEndOf="@+id/ringFour"
+            android:layout_marginLeft="11dp" android:layout_marginStart="11dp"
+            app:layout_constraintTop_toTopOf="@+id/resistance"
             app:layout_constraintBottom_toBottomOf="@+id/resistance"/>
-    <TextView
-            android:layout_width="16dp"
-            android:layout_height="56dp" android:id="@+id/ringThree"
-            app:layout_constraintEnd_toEndOf="@+id/resistance" app:layout_constraintStart_toStartOf="@+id/resistance"
-            app:layout_constraintHorizontal_bias="0.471" app:layout_constraintTop_toTopOf="@+id/resistance"
-            app:layout_constraintBottom_toBottomOf="@+id/resistance"/>
-    <TextView
-            android:layout_width="16dp"
-            android:layout_height="56dp" android:id="@+id/ringFour"
-            app:layout_constraintEnd_toEndOf="@+id/resistance" app:layout_constraintStart_toStartOf="@+id/resistance"
-            app:layout_constraintHorizontal_bias="0.657" app:layout_constraintTop_toTopOf="@+id/resistance"
-            app:layout_constraintBottom_toBottomOf="@+id/resistance"/>
-    <TextView
-            android:layout_width="15dp"
-            android:layout_height="56dp" android:id="@+id/ringFifth"
-            app:layout_constraintEnd_toEndOf="@+id/resistance" app:layout_constraintStart_toStartOf="@+id/resistance"
-            app:layout_constraintHorizontal_bias="0.835" app:layout_constraintTop_toTopOf="@+id/resistance"
-            app:layout_constraintBottom_toBottomOf="@+id/ringFour"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

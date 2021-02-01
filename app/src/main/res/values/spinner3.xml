@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="spinner_3_text">
-        <item>3. Farbring</item>
-        <item>Schwarz</item>
-        <item>Braun</item>
-        <item>Rot</item>
-        <item>Orange</item>
-        <item>Gelb</item>
-        <item>Grün</item>
-        <item>Blau</item>
-        <item>Violett</item>
-        <item>Grau</item>
-        <item>Weiß</item>
+        <item>@string/thirdRing</item>
+        <item>@string/black</item>
+        <item>@string/brown</item>
+        <item>@string/red</item>
+        <item>@string/orange</item>
+        <item>@string/yellow</item>
+        <item>@string/green</item>
+        <item>@string/blue</item>
+        <item>@string/violet</item>
+        <item>@string/gray</item>
+        <item>@string/white</item>
     </string-array>
 
     <integer-array name="spinner_3_values">

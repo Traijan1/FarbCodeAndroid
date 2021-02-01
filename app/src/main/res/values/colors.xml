@@ -9,14 +9,14 @@
 
     <color name="resistorColor">#bea787</color>
     <color name="black">#050404</color>
-    <color name="brown">#d89852</color>
+    <color name="brown">#735739</color>
     <color name="red">#820933</color>
     <color name="orange">#ffba52</color>
     <color name="yellow">#f8e730</color>
     <color name="green">#84e296</color>
     <color name="blue">#335c87</color>
     <color name="violett">#9044ab</color>
-    <color name="gray">#dad2d8</color>
+    <color name="gray">#4d4d4d</color>
     <color name="white">#ffffff</color>
     <color name="gold">#d4af37</color>
     <color name="silver">#c1c1c1</color>

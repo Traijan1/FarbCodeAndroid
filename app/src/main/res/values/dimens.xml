@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="spinner_width">150dp</dimen>
+    <dimen name="spinner_width">140dp</dimen>
+    <dimen name="resistorHeight">70dp</dimen>
+    <dimen name="resistorWidth">200dp</dimen>
+    <dimen name="ringWidth">15dp</dimen>
+    <dimen name="ringLeftDistance">10dp</dimen>
 </resources>

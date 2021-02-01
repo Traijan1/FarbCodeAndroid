@@ -7,4 +7,23 @@
     <string name="chooseMultiplicator">Geben Sie den Multiplikator an</string>
     <string name="chooseToleranz">Geben Sie die Toleranz an</string>
     <string name="result">%s ± %s</string>
+
+    <string name="black">Schwarz</string>
+    <string name="brown">Braun</string>
+    <string name="red">Rot</string>
+    <string name="orange">Orange</string>
+    <string name="yellow">Gelb</string>
+    <string name="green">Grün</string>
+    <string name="blue">Blau</string>
+    <string name="violet">Violett</string>
+    <string name="gray">Grau</string>
+    <string name="white">Weiß</string>
+    <string name="gold">Gold</string>
+    <string name="silver">Silber</string>
+
+    <string name="firstRing">1. Ring</string>
+    <string name="secondRing">2. Ring</string>
+    <string name="thirdRing">3. Ring</string>
+    <string name="multiplier">Multiplikator</string>
+    <string name="tolerance">Toleranz</string>
 </resources>
